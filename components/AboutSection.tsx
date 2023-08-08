@@ -28,11 +28,11 @@ const AboutSection = () => {
                         <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
                           Get to know me!
                         </h1>
-                        <p>I'm from Dublin, Ireland and have lived in many places around the world, like Singapore, UK and New Zealand. I'm currently based in the state of Baden-Württemberg in Germany. </p>
+                        <p>{"I'm from Dublin, Ireland and have lived in many places around the world, like Singapore, UK and New Zealand. I'm currently based in the state of Baden-Württemberg in Germany."} </p>
                         <br />
-                        <p>My professional background is in marketing, sales and business development, with a lot of focus on enterprise software. </p>
+                        <p>{"My professional background is in marketing, sales and business development, with a lot of focus on enterprise software."}</p>
                         <br />
-                        <p>I'm currently on a mission to learn how to put my business experience to work in a more technical setting, check out some of my recent prokects below.</p>
+                        <p>{"I'm currently on a mission to learn how to put my business experience to work in a more technical setting, check out some of my recent prokects below."}</p>
                     </div>
                     <div className="md:w-1/2">
                          <h1 className="text-center text-2xl font-bold mb-6 md:text-left">My Skills</h1>
