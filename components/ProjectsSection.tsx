@@ -7,19 +7,25 @@ import SlideUp from "./SlideUp"
 const projects = [
     {
       name: "Pokedex",
-      description:
-        "Building this pokedex was a fun way to learn about DOM interaction, Ajax and asychronous behaviour. Built using Bootstrap and jQuery",
+      description: "Building this pokedex was a fun way to learn about DOM interaction, Ajax and asychronous behaviour. Built using Bootstrap and jQuery.",
       image: "/pokedex-project.png",
       github: "https://github.com/Baz125/Pokedex-Project",
       link: "https://baz125.github.io/Pokedex-Project/",
     },
     {
-      name: "Movie App",
-      description: "Built on MERN stack. Full front and back end, auth password hashing and profile creation. This project was my most challenging to date.",
-      image: "/myflix-project.png",
-      github: "https://github.com/Baz125/myFlix-client",
-      link: "https://baz125myflix.netlify.app/",
+      name: "Movie App API",
+      description: "This fully functional RESTful API provides users with secure authorization, access to interesting data about movies and allows them to create a simple profile. It was an exercise in advanced backend development.",
+      image: "/mongo-node-express.jpg",
+      github: "https://github.com/Baz125/movie-app",
+      link: "https://moviedb125.herokuapp.com/",
     },
+    {
+        name: "Movie App - React Front End",
+        description: "Built on MERN stack and demonstrating advanced client side programming, this is a Single Page Web Application allowing users to interact with the data in the Movie App API.",
+        image: "/myflix-project.png",
+        github: "https://github.com/Baz125/myFlix-client",
+        link: "https://baz125myflix.netlify.app/",
+      },
     {
       name: "meetApp",
       description:
@@ -28,6 +34,22 @@ const projects = [
       github: "https://github.com/Baz125/meetApp",
       link: "https://baz125.github.io/meetApp/",
     },
+    {
+        name: "chinwag",
+        description:
+            "chinwag is a React Native Mobile Chat App, it provides users with a chat interface inside a single chat room, and functionality to share images, audio and location. It uses Google Firebase Realtime Database.",
+        image: "/chinwag.jpg",
+        github: "https://github.com/Baz125/ChatApp",
+        link: "https://github.com/Baz125/ChatApp",
+    },
+    {
+        name: "WatchList",
+        description:
+            "WatchList is an alternative front-end for the Movie API built in Angular. With a slightly simpler UI, it was an opportunity to learn the Angular framework",
+        image: "/watchlist.png",
+        github: "https://github.com/Baz125/WatchList_Angular_Client",
+        link: "https://baz125.github.io/WatchList_Angular_Client/welcome",
+    }
   ]
 
 const ProjectsSection = () => {
@@ -66,12 +88,14 @@ const ProjectsSection = () => {
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
                                             </Link> 
+                                          {project.link ? (
                                             <Link href={project.link} target="_blank">
                                                 <BsArrowUpRightSquare
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
-                                            </Link>
+                                              </Link>
+                                              ) : null }
                                         </div>
                                     </div>
                                 </div>
