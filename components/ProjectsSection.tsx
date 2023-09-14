@@ -6,13 +6,6 @@ import SlideUp from "./SlideUp"
 
 const projects = [
     {
-      name: "Pokedex",
-      description: "Building this pokedex was a fun way to learn about DOM interaction, Ajax and asychronous behaviour. Built using Bootstrap and jQuery.",
-      image: "/pokedex-project.png",
-      github: "https://github.com/Baz125/Pokedex-Project",
-      link: "https://baz125.github.io/Pokedex-Project/",
-    },
-    {
       name: "Movie App API",
       description: "This fully functional RESTful API provides users with secure authorization, access to interesting data about movies and allows them to create a simple profile. It was an exercise in advanced backend development.",
       image: "/mongo-node-express.jpg",
@@ -42,6 +35,13 @@ const projects = [
         github: "https://github.com/Baz125/ChatApp",
         link: "https://github.com/Baz125/ChatApp",
     },
+    {
+        name: "Pokedex",
+        description: "Building this pokedex was a fun way to learn about DOM interaction, Ajax and asychronous behaviour. Built using Bootstrap and jQuery.",
+        image: "/pokedex-project.png",
+        github: "https://github.com/Baz125/Pokedex-Project",
+        link: "https://baz125.github.io/Pokedex-Project/",
+      },
     {
         name: "WatchList",
         description:

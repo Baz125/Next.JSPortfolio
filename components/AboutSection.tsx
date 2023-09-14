@@ -32,7 +32,7 @@ const AboutSection = () => {
                         <br />
                         <p>{"My professional background is in marketing, sales and business development, with a lot of focus on enterprise software."}</p>
                         <br />
-                        <p>{"I'm currently on a mission to learn how to put my business experience to work in a more technical setting, check out some of my recent prokects below."}</p>
+                        <p>{"I'm currently on a mission to learn how to put my business experience to work in a more technical setting, check out some of my recent projects below."}</p>
                     </div>
                     <div className="md:w-1/2">
                          <h1 className="text-center text-2xl font-bold mb-6 md:text-left">My Skills</h1>
