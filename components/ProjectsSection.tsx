@@ -10,7 +10,6 @@ const projects = [
       description: "This fully functional RESTful API provides users with secure authorization, access to interesting data about movies and allows them to create a simple profile. It was an exercise in advanced backend development.",
       image: "/mongo-node-express.jpg",
       github: "https://github.com/Baz125/movie-app",
-      link: "https://moviedb125.herokuapp.com/",
     },
     {
         name: "Movie App - React Front End",
@@ -33,7 +32,6 @@ const projects = [
             "chinwag is a React Native Mobile Chat App, it provides users with a chat interface inside a single chat room, and functionality to share images, audio and location. It uses Google Firebase Realtime Database.",
         image: "/chinwag.jpg",
         github: "https://github.com/Baz125/ChatApp",
-        link: "https://github.com/Baz125/ChatApp",
     },
     {
         name: "Pokedex",
@@ -66,15 +64,24 @@ const ProjectsSection = () => {
                             <SlideUp offset="300px 0px -300px 0px">
                                 <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                                     <div className="mt-8 md:w-1/2">
-                                        <Link href={project.link} target="_blank">
-                                            <Image
-                                                src={project.image}
-                                                alt=""
-                                                width={1000}
-                                                height={1000}
-                                                className="rounded-xl shadow-xl hover:opacity-70"
-                                            />
-                                        </Link>
+                                        
+                                      {project.link ? (
+                                          <Link href={project.link} target="_blank">
+                                              <Image
+                                                  src={project.image}
+                                                  alt=""
+                                                  width={1000}
+                                                  height={1000}
+                                                  className="rounded-xl shadow-xl hover:opacity-70"
+                                              />
+                                          </Link>) : <Image
+                                                        src={project.image}
+                                                        alt=""
+                                                        width={1000}
+                                                        height={1000}
+                                                        className="rounded-xl shadow-xl hover:opacity-70"
+                                                        />
+                                      }
                                     </div>
                                     <div className="mt-12 md:w-1/2">
                                         <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
