@@ -32,6 +32,7 @@ const projects = [
             "chinwag is a React Native Mobile Chat App, it provides users with a chat interface inside a single chat room, and functionality to share images, audio and location. It uses Google Firebase Realtime Database.",
         image: "/chinwag.jpg",
         github: "https://github.com/Baz125/ChatApp",
+        definition: "to chat idly,"
     },
     {
         name: "Pokedex",
@@ -88,7 +89,17 @@ const ProjectsSection = () => {
                                         <p className="text-xl leading-16 md-4 text-neutral-600 dark:text-neutral-400">
                                             {project.description}
                                         </p>
-                                        <div className="flex flex-row align-bottom py-10 space-x-4">
+                                        
+                                          {project.definition ? (
+                                            <div>
+                                                <p><em>definition:</em> chinwag</p>
+                                                <p><strong>British English, Hiberno English</strong> (<sup>verb</sup> -wagged, -wagging)</p>
+                                                <p>(ˈtʃɪnˌwæɡ); slang</p>
+                                                <p><strong>INTRANSITIVE VERB</strong></p>
+                                                <p><em>to chat idly; gossip</em></p>
+                                            </div>
+                                      ) : null}
+                                      <div className="flex flex-row align-bottom py-10 space-x-4">
                                             <Link href={project.github} target="_blank">
                                                 <BsGithub
                                                     size={30}
@@ -102,8 +113,9 @@ const ProjectsSection = () => {
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
                                               </Link>
-                                              ) : null }
-                                        </div>
+                                          ) : null}
+                                          </div>
+                                        
                                     </div>
                                 </div>
                             </SlideUp>
