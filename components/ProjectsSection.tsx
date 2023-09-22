@@ -16,7 +16,7 @@ const projects = [
         description: "Built on MERN stack and demonstrating advanced client side programming, this is a Single Page Web Application allowing users to interact with the data in the Movie App API.",
         image: "/myflix-project.png",
         github: "https://github.com/Baz125/myFlix-client",
-        link: "https://movieapp.barrymcguirk.com/",
+        link: "https://baz125myflix.netlify.app/",
       },
     {
       name: "meetApp",
