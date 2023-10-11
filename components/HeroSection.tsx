@@ -15,17 +15,17 @@ const HeroSection = () => {
                     <h1 className="font-bold text-4xl mt-6 md:text-7xl md:mt-0">Barry McGuirk</h1>
                     <p className="text-lg mt-4 mb-6 md:text-2xl">Full-stack Web Developer, Pre-Sales Solutions Engineer, SaaS Sales Professional</p>       
                       <div>            
-                        <Link
-                      to="projects"
+                        <a
+                      href="#projects"
                       className="hover:cursor-pointer text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-                      activeClass="active"
-                      spy={true}
-                      smooth={true}
-                      offset={-100}
-                      duration={500}
+                     // activeClass="active"
+                     // spy={true}
+                     // smooth={true}
+                     // offset={-100}
+                     // duration={500}
                     > 
                         Projects  
-                        </Link>
+                        </a>
                       </div>
               </div>
           </div>
