@@ -1,4 +1,4 @@
-//"use client"
+"use client"
 import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
@@ -30,16 +30,16 @@ const HeroSection = () => {
               </div>
           </div>
           <div className="flex flex-row justify-center py-20">
-              <Link
-                  to="about"
-                  activeClass="activate"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
+              <a
+                  href="#about"
+                  //activeClass="activate"
+                  //spy={true}
+                  //smooth={true}
+                  //offset={-100}
+                  //duration={500}
               >
                   <HiArrowDown size={35} className="animate-bounce" />
-              </Link>
+              </a>
           </div>
         </section>
   )
