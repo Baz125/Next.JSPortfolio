@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                                     <div className="mt-8 md:w-1/2">
                                         
                                       {project.link ? (
-                                          <a href={project.link} target="_blank">
+                                          <a href={project.link} target="_blank" rel="noreferrer">
                                               <Image
                                                   src={project.image}
                                                   alt=""
@@ -100,14 +100,14 @@ const ProjectsSection = () => {
                                             </div>
                                       ) : null}
                                       <div className="flex flex-row align-bottom py-10 space-x-4">
-                                            <a href={project.github} target="_blank">
+                                            <a href={project.github} target="_blank" rel="noreferrer">
                                                 <BsGithub
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
                                             </a> 
                                           {project.link ? (
-                                            <a href={project.link} target="_blank">
+                                            <a href={project.link} target="_blank" rel="noreferrer">
                                                 <BsArrowUpRightSquare
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
