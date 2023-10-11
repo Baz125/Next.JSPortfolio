@@ -37,11 +37,11 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
+            <a href="#home">
               <div className="container flex items-center space-x-2">
                 <h2 className="hover:cursor-pointer text-2xl font-bold">Barry McGuirk</h2>
               </div>
-            </Link>
+            </a>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -62,21 +62,21 @@ export default function Navbar() {
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
                 return (
-                  <Link
+                  <a
                     key={idx}
-                    to={item.page}
+                    href={item.page}
                     className={
                       "hover:cursor-pointer block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
                     }
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
+                    //activeClass="active"
+                    //spy={true}
+                    //smooth={true}
+                    //offset={-100}
+                    //duration={500}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 )
               })}
               {currentTheme === "dark" ? (

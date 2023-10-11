@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                                     <div className="mt-8 md:w-1/2">
                                         
                                       {project.link ? (
-                                          <Link href={project.link} target="_blank">
+                                          <a href={project.link} target="_blank">
                                               <Image
                                                   src={project.image}
                                                   alt=""
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
                                                   height={1000}
                                                   className="rounded-xl shadow-xl hover:opacity-70"
                                               />
-                                          </Link>) : <Image
+                                          </a>) : <Image
                                                         src={project.image}
                                                         alt=""
                                                         width={1000}
@@ -100,19 +100,19 @@ const ProjectsSection = () => {
                                             </div>
                                       ) : null}
                                       <div className="flex flex-row align-bottom py-10 space-x-4">
-                                            <Link href={project.github} target="_blank">
+                                            <a href={project.github} target="_blank">
                                                 <BsGithub
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
-                                            </Link> 
+                                            </a> 
                                           {project.link ? (
-                                            <Link href={project.link} target="_blank">
+                                            <a href={project.link} target="_blank">
                                                 <BsArrowUpRightSquare
                                                     size={30}
                                                     className="hover:-translate-y-1 transition-transform cursor-pointer"
                                                 />
-                                              </Link>
+                                              </a>
                                           ) : null}
                                           </div>
                                         
