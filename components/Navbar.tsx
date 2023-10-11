@@ -15,15 +15,15 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
-    page: "home",
+    page: "#home",
   },
   {
     label: "About",
-    page: "about",
+    page: "#about",
   },
   {
     label: "Projects",
-    page: "projects",
+    page: "#projects",
   },
 ]
 
