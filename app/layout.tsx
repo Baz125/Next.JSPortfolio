@@ -1,14 +1,23 @@
 "use client"
 import "../styles/globals.css"
 import Navbar from "@/components/Navbar"
+import Navbar2 from "@/components/Navbar2"
 import Footer from "@/components/Footer"
 import { ThemeProvider } from "next-themes"
+import { useRouter } from 'next/navigation'
+
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  })
+
+{
+
+  const router = useRouter()
+  const isHomePage = router.pathname === "/"
+
   return (
     <html lang="en" className="scroll-smooth">
       {/*
@@ -18,7 +27,7 @@ export default function RootLayout({
       <head />
       <body className="dark:bg-stone-900">
         <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
+          {isHomePage ? <Navbar /> : <Navbar2 />}
           {children}
           <Footer />
         </ThemeProvider>
