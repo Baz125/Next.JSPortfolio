@@ -7,8 +7,15 @@ const ChinwagSection = () => {
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Chinwag
         </h1>
+        <div className="text-left mb-10">
+            <p><em>definition:</em> chinwag</p>
+            <p><strong>British English, Hiberno English</strong> (<sup>verb</sup> -wagged, -wagging)</p>
+            <p>(ˈtʃɪnˌwæɡ); slang</p>
+            <p><strong>INTRANSITIVE VERB</strong></p>
+            <p><em>to chat idly; gossip</em></p>
+        </div>
         <p className="text-xl leading-16 md-4 text-neutral-600 dark:text-neutral-400">
-          To wag one's chin means to have a chat. Chinwag is a native mobile
+          Chinwag is a native mobile
           application ready to be installed on iOS and Android devices, built
           using React Native. It cosists of a single chat thread and it allows users
           access and share thier device's storage, camera, location and microphone. It also

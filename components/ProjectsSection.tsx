@@ -33,7 +33,8 @@ const projects = [
             "chinwag is a React Native Mobile Chat App, it provides users with a chat interface inside a single chat room, and functionality to share images, audio and location. It uses Google Firebase Realtime Database.",
         image: "/chinwag.jpg",
         github: "https://github.com/Baz125/ChatApp",
-        definition: "to chat idly,"
+        definition: "to chat idly,",
+        intLink: "/chinwagproject"
     },
     {
         name: "Pokedex",
@@ -100,7 +101,7 @@ const ProjectsSection = () => {
                                   {project.description}
                               </p>
                               
-                                {project.definition ? (
+                                {/* {project.definition ? (
                                   <div>
                                       <p><em>definition:</em> chinwag</p>
                                       <p><strong>British English, Hiberno English</strong> (<sup>verb</sup> -wagged, -wagging)</p>
@@ -108,7 +109,7 @@ const ProjectsSection = () => {
                                       <p><strong>INTRANSITIVE VERB</strong></p>
                                       <p><em>to chat idly; gossip</em></p>
                                   </div>
-                            ) : null}
+                            ) : null} */}
                             <div className="flex flex-row align-bottom py-10 space-x-4">
                                   <a href={project.github} target="_blank" rel="noreferrer">
                                       <BsGithub
