@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar"
 import Navbar2 from "@/components/Navbar2"
 import Footer from "@/components/Footer"
 import { ThemeProvider } from "next-themes"
-import { useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 
 export default function RootLayout({
@@ -15,8 +15,8 @@ export default function RootLayout({
 
 {
 
-  const router = useRouter()
-  const isHomePage = router.pathname === "/"
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
 
   return (
     <html lang="en" className="scroll-smooth">
